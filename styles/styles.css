@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/pt-sans-regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/pt-sans-bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+
+.index-background {
+    color: #000000;
+    background-color: #FFFFFF;
+    background-image: url("../img/index-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+
+ .divider {
+  background-image: url("../img/divider.svg");
+ }
+
+
+
+.page-footer {
+    color: #000000;
+    background-color: #FFFFFF;
+    background-image: url("../img/background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+
+
+.main-inner {
+    color: #000000;
+    background-color: #FFFFFF;
+    background-image: url("../img/catalog-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
