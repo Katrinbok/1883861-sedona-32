@@ -114,7 +114,7 @@
           </fieldset>
 
           <button class='button' type='submit'>Применить</button>
-          <button class='button' type='reset'>Сбросить</button>
+          <button class='text-button' type='reset'>Сбросить</button>
       </form>
     </section>
 
@@ -148,9 +148,9 @@
           </a>
           <span class='visually-hidden'>Звезды(класс гостиницы)</span>
           <span class='hotel-card-type'>Гостиница</span>
-          <span class='hotel-card-price'>От 4000 ₽</span>
+          <span class='hotel-card-price'>От 4000 ₽</span><br>
           <a class='hotel-card-button button' href='#'>подробнее</a>
-          <button class='button'>В избранное</button>
+          <button class='button favorite-button'>В избранное</button>
           <b class='rating'>Рейтинг: 8,5</b>
       </li>
 
@@ -161,9 +161,9 @@
           </a>
           <span class='visually-hidden'>Звезды(класс гостиницы)</span>
           <span class='hotel-card-type'>Мотель</span>
-          <span class='hotel-card-price'>От 3000 ₽</span>
+          <span class='hotel-card-price'>От 3000 ₽</span><br>
           <a class='hotel-card-button button' href='#'>подробнее</a>
-          <button class='button'>В избранное</button>
+          <button class='button favorite-button'>В избранное</button>
           <b class='rating'>Рейтинг: 8,9</b>
       </li>
 
@@ -174,9 +174,9 @@
         </a>
         <span class='visually-hidden'>Звезды(класс гостиницы)</span>
         <span class='hotel-card-type'>Апартаменты</span>
-        <span class='hotel-card-price'>От 2000 ₽</span>
+        <span class='hotel-card-price'>От 2000 ₽</span><br>
         <a class='hotel-card-button button' href='#'>подробнее</a>
-        <button class='button favorites'>В избранное</button>
+        <button class='button favorite-button'>В избранное</button>
         <b class='rating'>Рейтинг: 9,2</b>
       </li>
 
@@ -187,9 +187,9 @@
       </a>
       <span class='visually-hidden'>Звезды(класс гостиницы)</span>
       <span class='hotel-card-type'>Гостиница</span>
-      <span class='hotel-card-price'>От 3000 ₽</span>
+      <span class='hotel-card-price'>От 3000 ₽</span> <br>
       <a class='hotel-card-button button' href='#'>подробнее</a>
-      <button class='button'>В избранное</button>
+      <button class='button favorite-button'>В избранное</button>
       <b class='rating'>Рейтинг: 9,2</b>
       </li>
       </ul>
@@ -209,18 +209,6 @@
               <a class='pagination-link' href='#'>4</a>
           </li>
           <li class='pagination-item'>
-            <a class='pagination-link' href='#'>5</a>
-          </li>
-          <li class='pagination-item'>
-            <a class='pagination-link' href='#'>6</a>
-          </li>
-          <li class='pagination-item'>
-            <a class='pagination-link' href='#'>7</a>
-          </li>
-          <li class='pagination-item'>
-            <a class='pagination-link' href='#'>8</a>
-          </li>
-          <li class='pagination-item'>
             <a class='pagination-link' href='#'>9</a>
           </li>
           <li class='pagination-item'>
@@ -228,17 +216,22 @@
           </li>
       </ul>
       <form class='result-number' action='https://echo.htmlacademy.ru/' method='post'>
-        <label>
           <span class='result-label'>Гостиниц на странице:</span>
-          <input class='result-input' name='result-number' type='number'>
-        </label>
+          <select class='hotel-number'>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4" selected>4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
       </form>
     </section>
   </main>
 
-  <footer class='page-footer'>
+  <footer class='page-footer-catalog'>
     <section class='footer-newsletter'>
-        <h2 class='footer-titile'>Подпишитесь на рассылку</h2>
+        <h2 class='footer-title'>Подпишитесь на рассылку</h2>
         <p class='footer-newsletter-description'>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class='newsletter-form' action='https://echo.htmlacademy.ru/' method='post'>
           <p class='newsletter-email'>
@@ -274,7 +267,7 @@
      </section>
 
      <section>
-      <a class='htmlacademy-link' href='https://htmlacademy.ru/'>.html academy</a>
+      <a class='htmlacademy-link' href='https://htmlacademy.ru/'><img class='logo-htmlacademy' src='img/logo_htmlacademy.svg' width="114" height="32" alt='Логотип HTML Academy'></a>
      </section>
   </footer>
 </body>

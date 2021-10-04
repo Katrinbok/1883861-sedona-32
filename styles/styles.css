@@ -15,7 +15,38 @@
   font-display: swap;
 }
 
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #E5E5E5;
+}
 
+.page-header {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-decoration: none;
+  }
+
+.button {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #756257;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
 
 .index-background {
     color: #000000;
@@ -29,7 +60,85 @@
   background-image: url("../img/divider.svg");
  }
 
+.main-index-title, .welcome-title, .footer-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }
 
+.advantages-title {
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+    color: #333333;
+  }
+
+.advantages-item-container {
+    color: #FFFFFF;
+    background-color: rgba(131, 179, 211, 1);
+  }
+
+.advantages-item-title, .advantages-item-list-title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+.advantages-item-list, .advantages-number, .advantages-description {
+    color: #333333;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+  }
+
+.advantages-item-list-item:nth-of-type(1), .advantages-item-list-item:nth-of-type(3), .advantages-item:nth-of-type(3), .advantages-item:nth-of-type(5) {
+    background-color: rgba(131, 179, 211, 0.12);
+  }
+
+
+.advantages-item-list-item:nth-of-type(2) {
+    background-color: #FFFFFF;
+  }
+
+.advantages-item:nth-of-type(4) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.welcome-description {
+    color: #333333;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.search-link {
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.footer-newsletter-description {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.field {
+    font-size: 18px;
+    line-height: 26px;
+ }
+
+.newsletter-button {
+  background-color: #83B3D3;
+ }
+
+.welcome-title, .footer-title {
+    color: #FFFFFF;
+}
 
 .page-footer {
     color: #000000;
@@ -39,7 +148,12 @@
     background-repeat: no-repeat;
 }
 
-
+.footer-contacts-phone {
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+  }
 
 .main-inner {
     color: #000000;
@@ -47,4 +161,86 @@
     background-image: url("../img/catalog-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
+}
+
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.catalog-hotels {
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+.result {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 39px;
+  text-transform: uppercase;
+}
+
+.select-control {
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+}
+
+.hotel-card-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.hotel-card-type, .hotel-card-price, .result-label {
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+}
+
+.favorite-button {
+  background-color: #83B3D3;
+}
+
+.rating {
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.pagination-show-more {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+}
+
+.page-footer-catalog .footer-title {
+  color: #000000;
+}
+
+.page-footer-catalog .footer-newsletter-description {
+  color: #333333;
 }
