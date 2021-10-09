@@ -15,7 +15,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -28,6 +36,22 @@ body {
   background-color: #FFFFFF;
 }
 
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+}
+
+.navigation-user {
+  max-width: 250px;
+  margin-left: auto;
+}
 .navigation-link {
   font-size: 20px;
   line-height: 26px;
@@ -48,6 +72,20 @@ body {
     text-transform: uppercase;
   }
 
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-index-photo {
+  display: block;
+  margin: 0 auto;
+}
+
 .index-background {
     color: #000000;
     background-color: #FFFFFF;
@@ -67,6 +105,34 @@ body {
     text-align: center;
     text-transform: uppercase;
   }
+
+.advantages-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.city, .bridge, .advantages-item:nth-of-type(3), .advantages-item:nth-of-type(4), .advantages-item:nth-of-type(5) {
+  width: 400px;
+  height: 384px;
+
+}
+
+.advantages-item-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.advantages-item-container {
+  display: flex;
+}
+
+.advantages-item-list-item {
+  width: 400px;
+  height: 384px;
+}
 
 .advantages-title {
     font-size: 22px;
@@ -136,13 +202,19 @@ body {
   background-color: #83B3D3;
  }
 
-.welcome-title, .footer-title {
+.welcome-title {
+  color: #000000;
+}
+
+.footer-title {
     color: #FFFFFF;
 }
 
-.page-footer {
+.footer-newsletter {
     color: #000000;
     background-color: #FFFFFF;
+    width: 1200px;
+    height: 410px;
     background-image: url("../img/background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -243,4 +315,27 @@ body {
 
 .page-footer-catalog .footer-newsletter-description {
   color: #333333;
+}
+
+.page-footer-container {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-contacts-container {
+  display: flex;
+}
+
+.footer-social {
+  width: 150px;
+}
+
+.footer-contacts {
+  width: 720px;
+}
+
+.htmlacademy-link {
+  width: 120px;
 }
