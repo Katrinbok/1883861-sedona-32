@@ -88,14 +88,13 @@ body {
 
 .index-background {
     color: #000000;
-    background-color: #FFFFFF;
-    background-image: url("../img/index-background.jpg");
+    background: #FFFFFF url("../img/index-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
   }
 
  .divider {
-  background-image: url("../img/divider.svg");
+    background-image: url("../img/divider.svg");
  }
 
 .main-index-title, .welcome-title, .footer-title {
@@ -113,9 +112,9 @@ body {
     flex-wrap: wrap;
 }
 
-.city, .bridge, .advantages-item:nth-of-type(3), .advantages-item:nth-of-type(4), .advantages-item:nth-of-type(5) {
+.advantages-item-block, .advantages-item:nth-of-type(3), .advantages-item:nth-of-type(4), .advantages-item:nth-of-type(5) {
   width: 400px;
-  height: 384px;
+  min-height: 384px;
 
 }
 
@@ -131,7 +130,7 @@ body {
 
 .advantages-item-list-item {
   width: 400px;
-  height: 384px;
+  min-height: 384px;
 }
 
 .advantages-title {
@@ -212,10 +211,9 @@ body {
 
 .footer-newsletter {
     color: #000000;
-    background-color: #FFFFFF;
     width: 1200px;
     height: 410px;
-    background-image: url("../img/background.jpg");
+    background: #FFFFFF url("../img/background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
@@ -229,8 +227,7 @@ body {
 
 .main-inner {
     color: #000000;
-    background-color: #FFFFFF;
-    background-image: url("../img/catalog-background.jpg");
+    background: #FFFFFF url("../img/catalog-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
@@ -339,3 +336,56 @@ body {
 .htmlacademy-link {
   width: 120px;
 }
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.page-footer-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.form-container {
+  display: flex;
+}
+
+.search-button {
+  background-color: #83B3D3;
+}
+
+.sorting-container {
+  display: flex;
+ }
+
+ .hotel-card {
+  display: flex;
+ }
+
+ .hotel-info-container {
+  flex-grow: 1;
+  margin-left: 36px;
+ }
+
+ .rating-container {
+   width: 160px;
+   margin-right: 72px;
+ }
+
+ .pagination {
+  display: flex;
+ }
+
+ .pagination-item {
+   width: 55px;
+   height: 55px;
+   background-color: #83B3D3;
+   color: #FFFFFF;
+   margin-right: 8px;
+ }
+
+ .hotel-card-link {
+   text-decoration: none;
+   color: #000000;
+ }
