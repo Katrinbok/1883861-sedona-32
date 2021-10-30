@@ -76,6 +76,7 @@ body {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
 }
 
 .navigation-link {
@@ -106,6 +107,8 @@ body {
   .navigation-link:focus {
     color:#756257;
     outline: 3px solid #83B3D3;
+    border-radius: 10px;
+    padding: 10px;
     }
 
   .navigation-link:active {
@@ -142,10 +145,12 @@ body {
     background-color: #615048;
     color: #FFFFFF;
     outline: 3px solid #83B3D3;
+    border-radius: 10px;
   }
 
 .button:active {
   background-color: #615048;
+  color: rgba(255, 255, 255, 0.3)
   }
 
 .main-container {
@@ -161,7 +166,7 @@ body {
 .main-index-photo {
   display: block;
   margin: 0 auto;
-  }
+    }
 
 .index-background {
     color: #000000;
@@ -170,6 +175,10 @@ body {
     background-repeat: no-repeat;
     padding-top: 51px;
     position: relative;
+  }
+
+  .divider {
+    padding-top: 80px;
   }
 
  .divider::after {
@@ -182,7 +191,7 @@ body {
     right: 0;
     left: 0;
     bottom: 0;
- }
+     }
 
 .main-index-title, .welcome-title, .footer-title {
     font-size: 30px;
@@ -310,6 +319,7 @@ body {
 }
 
 
+
 .footer-newsletter-description {
     font-size: 22px;
     line-height: 26px;
@@ -377,6 +387,7 @@ body {
   display: flex;
   margin: 0;
   margin-bottom: 45px;
+  margin-left: 72px;
   padding: 0;
   }
 
@@ -680,34 +691,61 @@ body {
   content: '';
   background: url('../img/gift.svg') no-repeat;
   width: 100%;
-  height: 72px;
+  height: 75px;
   z-index: 1;
   position: absolute;
   left: 163px;
   top: 85px;
   }
 
- .footer-social-twitter {
-    background-image: url('../img/social-twitter.svg');
-    height: 15px;
-    width: 18px;
-    display: block;
+   .footer-social-twitter-icon:hover path {
+    fill: #68A2CA;
+  }
+
+  .footer-social-twitter-icon:focus path {
+    fill: #68A2CA;
+    outline: 3px solid #83B3D3;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .footer-social-twitter-icon:active path {
+    fill: #68A2CA;
+    opacity: 0.3;
   }
 
 
-.footer-social-fc {
-    background-image: url('../img/social-facebook.svg');
-    height: 18px;
-    width: 10px;
-    display: block;
-  }
+.footer-social-fc-icon:hover path {
+  fill: #68A2CA;
+}
 
-.footer-social-yt {
-    background-image: url('../img/social-youtube.svg');
-    height: 16px;
-    width: 20px;
-    display: block;
-  }
+.footer-social-fc-icon:focus path {
+  fill: #68A2CA;
+  outline: 3px solid #83B3D3;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.footer-social-fc-icon:active path {
+  fill: #68A2CA;
+  opacity: 0.3;
+}
+
+.footer-social-yt-icon:hover path {
+  fill: #68A2CA;
+}
+
+.footer-social-yt-icon:focus path {
+  fill: #68A2CA;
+  outline: 3px solid #83B3D3;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.footer-social-yt-icon:active path {
+  fill: #68A2CA;
+  opacity: 0.3;
+}
 
   .card-grid-toggle {
     display: flex;
@@ -736,20 +774,14 @@ body {
 
 .navigation-link-current::before {
   position: absolute;
-  right: 30px;
   bottom: 0;
   left: 0;
   height: 2px;
+  width: 100%;
   background-color: #756257;
   content: "";
 }
 
-
-.breadcrumbs-link-home {
-  background-image: url('../img/home 1.svg');
-  height: 12px;
-  width: 12px;
-}
 
 .favorite-sorted {
   background-color: #7DB54F;
@@ -764,7 +796,7 @@ body {
     background-color: #68A2CA;
     color: #FFFFFF;
     border: 3px solid #756257;
-    border-radius: 10px;
+    border-radius: 4px;
 }
 
 .favorite-sorted:hover {
@@ -772,7 +804,16 @@ body {
 }
 .favorite-sorted:focus {
   background-color: #6C9E42;
+  outline: 3px solid #756257;
+  border-radius: 4px;
+
 }
+
+.favorite-sorted:active {
+  background-color: #6C9E42;
+
+}
+
 
 .hotel-card-image-link:hover {
   opacity: 0.6;
@@ -803,6 +844,8 @@ body {
 .footer-contacts-phone:focus {
   color: #756257;
   outline: 3px solid #83B3D3;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .footer-contacts-phone:active {
@@ -810,3 +853,28 @@ body {
   opacity: 0.3;
 }
 
+.footer-logo-icon:hover path {
+  fill: #756257;
+}
+
+.footer-logo-icon:focus path{
+  outline: 3px solid #83B3D3;
+  border-radius: 10px;
+  fill: #756257;
+  padding: 10px;
+}
+
+
+.footer-logo-icon:active path {
+  fill: #756257;
+  opacity: 0.3;
+}
+
+.wrapper {
+  position: relative;
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
