@@ -51,6 +51,7 @@
             </svg>
             <span class='visually-hidden'>Главная</span></a>
       </li>
+      <li class='breadcrumbs-item breadcrumbs-item-less'></li>
       <li class='breadcrumbs-item'>
           <a class='breadcrumbs-link'>Гостиницы</a>
       </li>
@@ -59,52 +60,52 @@
       <h2 class='visually-hidden'>Список гостиниц с фильтрами</h2>
       <form class='catalog-filter' action='https://echo.htmlacademy.ru/' method='post'>
         <div class='form-container'>
-          <fieldset class='catalog-filter-group'><legend class='catalog-filter-title'>Инфраструктура:</legend>
+          <fieldset class='catalog-filter-group checkbox-block'><legend class='catalog-filter-title'>Инфраструктура:</legend>
               <ul class='catalog-filter-list'>
                 <li class='catalog-filter-item'>
                   <label class='control'>
                     <input class='visually-hidden control-input' name='pool' type="checkbox" checked>
-                    <span class='conrol-mark'></span>
+                    <span class='control-mark'></span>
                     <span class='control-label'>Бассейн</span>
                 </label>
                 </li>
                 <li class='catalog-filter-item'>
                   <label class='control'>
                     <input class='visually-hidden control-input' name='parking' type="checkbox" checked>
-                    <span class='conrol-mark'></span>
+                    <span class='control-mark'></span>
                     <span class='control-label'>Парковка</span>
                 </label>
                 </li>
                 <li class='catalog-filter-item'>
                   <label class='control'>
                     <input class='visually-hidden control-input' name='wi-fi' type="checkbox">
-                    <span class='conrol-mark'></span>
+                    <span class='control-mark'></span>
                     <span class='control-label'>Wi-Fi</span>
                 </label>
                 </li>
               </ul>
           </fieldset>
 
-          <fieldset class='catalog-filter-group'><legend class='catalog-filter-title'>Тип жилья:</legend>
+          <fieldset class='catalog-filter-group radio-block'><legend class='catalog-filter-title'>Тип жилья:</legend>
               <ul class='catalog-filter-list'>
                   <li class='catalog-filter-item'>
                       <label class='control'>
                           <input class='visually-hidden control-input' name='house-group' type="radio" value='hotel' checked>
-                          <span class='conrol-mark'></span>
+                          <span class='control-mark'></span>
                           <span class='control-label'>Гостиница</span>
                       </label>
                   </li>
                   <li class='catalog-filter-item'>
                       <label class='control'>
                           <input class='visually-hidden control-input' name='house-group' type="radio" value='motel'>
-                          <span class='conrol-mark'></span>
+                          <span class='control-mark'></span>
                           <span class='control-label'>Мотель</span>
                       </label>
                   </li>
                   <li class='catalog-filter-item'>
                       <label class='control'>
                           <input class='visually-hidden control-input' name='house-group' type="radio" value='apartments'>
-                          <span class='conrol-mark'></span>
+                          <span class='control-mark'></span>
                           <span class='control-label'>Апартаменты</span>
                       </label>
                   </li>
@@ -112,17 +113,29 @@
           </fieldset>
 
           <fieldset class='catalog-filter-group'><legend class='catalog-filter-title'>Стоимость, ₽:</legend>
+            <div class="range">
+
+              <div class="range-wrapper-inputs">
             <label class='catalog-filter-label'>
-              <input class='catalog-filter-input' type='number' name='min-price'>от</label>
+              <input class='catalog-filter-input' type='number' value='0' name='min-price'>от</label>
             <label class='catalog-filter-label'>
-              <input class='catalog-filter-input' type='number' name='max-price'>до</label>
-            <button class='range-toggle toggle-min' type='button'>
+              <input class='catalog-filter-input' type='number' value='9000' name='max-price'>до</label>
+              </div>
+
+            <div class="range-scale">
+              <div class="range-bar" style="width: 227px">
+                <button class='range-toggle toggle-min' type='button'>
                 <span class='visually-hidden'>Изменить минимальную цену</span>
-            </button>
-            <button class='range-toggle toggle-max' type='button'>
+                </button>
+                <button class='range-toggle toggle-max' type='button'>
                 <span class='visually-hidden'>Изменить максимальную цену</span>
-            </button>
+                </button>
+              </div>
+            </div>
+
+            </div>
           </fieldset>
+
           <div class='button-container'>
           <button class='button search-button' type='submit'>Применить</button> <br>
           <button class='text-button' type='reset'>Сбросить</button>
@@ -136,12 +149,15 @@
       <div class='sorting-container'>
       <p class='result'>Найдено гостиниц: 38</p>
       <form class='sorting-type'>
+        <div class="select">
         <label class='visually-hidden' for='sorting'>Сортировка
         </label>
         <select class='select-control' id='sorting' name='sorting'>
-            <option value='popular'>Сначала дешевые</option>
+            <option value='cheap'>Сначала дешевые</option>
             <option value='expensive'>Сначала дорогие</option>
+            <option value='popular'>Сначала популярные</option>
         </select>
+        </div>
         <button class='visually-hidden' type='button'>Отсортировать гостиницы</button>
       </form>
         <div class='sorting-view'>
@@ -279,6 +295,7 @@
       </ul>
       <form class='result-number' action='https://echo.htmlacademy.ru/' method='post'>
           <span class='result-label'>Гостиниц на странице:</span>
+
           <select class='hotel-number'>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -287,6 +304,7 @@
             <option value="5">5</option>
             <option value="6">6</option>
           </select>
+
       </form>
       </div>
     </section>
