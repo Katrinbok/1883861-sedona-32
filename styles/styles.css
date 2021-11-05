@@ -241,7 +241,7 @@ body {
 }
 
 .advantages-item:nth-of-type(1) .advantages-number, .advantages-item:nth-of-type(2) .advantages-number, .advantages-item:nth-of-type(1) .advantages-description, .advantages-item:nth-of-type(2) .advantages-description {
-  color: white;
+  color: #FFFFFF;
 }
 
 
@@ -1106,7 +1106,7 @@ column-gap: 8px;
 
 .text-button {
   background-color: transparent;
-  color: white;
+  color: #FFFFFF;
   border: none;
   cursor: pointer;
   width: 100px;
@@ -1140,7 +1140,7 @@ column-gap: 8px;
   .range-bar {
     position: absolute;
     height: 4px;
-    background-color: white;
+    background-color: #FFFFFF;
   }
 
   .range-toggle {
@@ -1175,7 +1175,7 @@ column-gap: 8px;
   .catalog-filter-label {
     background-color: rgba(255, 255, 255, 0);
     color: rgba(255, 255, 255, 0.3);
-    border: 2px solid white;
+    border: 2px solid #FFFFFF;
     width: 143px;
     margin: 0;
     padding: 0;
@@ -1184,7 +1184,7 @@ column-gap: 8px;
 
   .catalog-filter-input {
     background-color:transparent;
-    color: white;
+    color: #FFFFFF;
     border: none;
     font: inherit;
     text-align: center;
@@ -1223,8 +1223,8 @@ column-gap: 8px;
   left: 0;
   width: 16px;
   height: 16px;
-  background-color: white;
-  border: 2px solid white;
+  background-color: #FFFFFF;
+  border: 2px solid #FFFFFF;
   border-radius: 4px;
 }
 
@@ -1244,7 +1244,7 @@ column-gap: 8px;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark {
-  background: url("../img/vector.svg") no-repeat center white;
+  background: url("../img/vector.svg") no-repeat center #FFFFFF;
   }
 
 .control-label {
@@ -1335,10 +1335,11 @@ column-gap: 8px;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
   z-index: 2;
+
 }
 
 .modal-container-close {
-  /*display: none;*/
+  display: none;
 }
 
 .modal {
@@ -1346,6 +1347,8 @@ column-gap: 8px;
   margin: auto;
   padding: 70px;
   background-color: #FFFFFF;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
 }
 
 .search-hotel {
@@ -1379,7 +1382,41 @@ column-gap: 8px;
   background-position: center;
   cursor: pointer;
   opacity: 0.3;
-  border: 1px solid red;
+
+}
+
+.minus-button {
+  padding: 0;
+  width: 13px;
+  height: 15px;
+  background-color: #ffffff;
+  border: none;
+  background-image: url("../img/minus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+}
+
+.plus-button {
+  padding: 0;
+  width: 13px;
+  height: 13px;
+  background-color: #ffffff;
+  border: none;
+  background-image: url("../img/minus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+}
+
+.minus-plus-container {
+  display: flex;
+align-items: baseline;
+width: 133px;
+justify-content: space-between;
+
 }
 
 .flex-modal-container {
@@ -1410,7 +1447,7 @@ column-gap: 8px;
   font-size: 18px;
   line-height: 40px;
   margin-right: 10px;
-  border: 1px solid red;
+
 }
 
 .children {
@@ -1429,8 +1466,36 @@ width: 575px;
 height: 60px;
 background: #83B3D3;
 border-radius: 10px;
-color: white;
+color: #FFFFFF;
 }
+
+.search-hotel-form-button:hover {
+  width: 575px;
+  height: 60px;
+  background-color: #68A2CA;
+  color: #FFFFFF;
+  background: #83B3D3;
+  border-radius: 10px;
+
+  }
+
+  .search-hotel-form-button:focus {
+    width: 575px;
+    height: 60px;
+    border: 3px solid #83B3D3;
+    outline: none;
+    background: #83B3D3;
+    border-radius: 10px;
+    color: #FFFFFF;
+    }
+
+    .search-hotel-form-button:active {
+      width: 575px;
+      height: 60px;
+      background: #83B3D3;
+      border-radius: 10px;
+      color: #FFFFFF;
+      }
 
 .date-in-field, .date-out-field {
   border: none;
@@ -1440,7 +1505,7 @@ color: white;
   line-height: 40px;
   padding-left: 9px;
   flex-grow: 1;
-  border: 1px solid red;
+
   height: 49px;
 }
 
@@ -1452,11 +1517,24 @@ color: white;
   font-size: 18px;
   line-height: 40px;
   padding-left: 19px;
-  }
+  width: 30px;
+   height: 50px;
 
-.adult-field, .children-field {
-  width: 133px;
-  height: 50px;
+}
+
+.adult-chidren-container {
+display: flex;
+justify-content: space-between;
+align-items: baseline;
+}
+
+.information-chidren {
+  background-color: #83B3D3;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  border: none;
+  cursor: pointer;
 }
 
 .date-in-comment {
@@ -1579,7 +1657,7 @@ color: #333333;
     font-size: 18px;
     line-height: 40px;
     font-weight: 700;
-    color: black;
+    color: #000000;
     height: 21px;
 
     }
